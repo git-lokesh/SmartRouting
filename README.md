@@ -106,4 +106,4 @@ This project is open-source and free to use for academic or personal purposes.
 
 ## 👨‍💻 Authors
 
-Made by [Lokesh](https://github.com/L0KESHprograms) and [Tharun](https://github.com/THARUN2004-star)
+Made by [Lokesh](https://github.com/git-lokesh) and [Tharun](https://github.com/THARUN2004-star)
