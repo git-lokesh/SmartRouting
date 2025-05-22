@@ -1,8 +1,9 @@
+
 # 🐜 ACO PathFinder: Ant Colony Optimization for Smart Routing
 
 This project applies the **Ant Colony Optimization (ACO)** algorithm to solve shortest path problems in two different environments:
 
-1. **Water Distribution Network** – A custom-built graph simulating a water pipeline layout.
+1. **Water Distribution Network** – A custom-built graph simulating a water pipeline layout.  
 2. **Real-world Road Network** – Loaded using OpenStreetMap data via the `osmnx` library, specifically focused on **Chennai, India**.
 
 ACO is a bio-inspired algorithm that simulates the pheromone-based navigation behavior of ants to find optimal paths.
@@ -15,6 +16,9 @@ ACO is a bio-inspired algorithm that simulates the pheromone-based navigation be
 aco_pathfinding/
 ├── aco_water_network.py     # ACO on a sample water network graph
 ├── aco_city_network.py      # ACO on real-world map data from OSM
+├── results/
+│   ├── citypath.png         # Result image for city routing
+│   └── waterdistribution.png# Result image for water network
 ├── requirements.txt         # Python dependencies
 └── README.md                # Project documentation
 ```
@@ -69,8 +73,11 @@ This fetches live OSM data and displays the optimized route using a map-based pl
 
 ## 📷 Visual Output
 
-- **Water Network**: Graph with red-highlighted optimal path.
-- **City Network**: Real-world route highlighted on a city map.
+### Water Network Path
+![Water Distribution Network](results/WaterDistributionPath.png)
+
+### Chennai Road Network Path
+![City Road Network](results/CityPath.png)
 
 ---
 
@@ -91,7 +98,7 @@ osmnx
 
 The city network example uses coordinates from **Chennai**:
 
-- **Source**: 13.032230, 80.211797
+- **Source**: 13.032230, 80.211797  
 - **Destination**: 13.035937, 80.204351
 
 You can modify these to suit your location or region of interest.
